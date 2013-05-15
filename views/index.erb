@@ -1,0 +1,45 @@
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Amazing Subscription Page For Amazing Product</h2>
+      <p>We're Here To Help</p>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 columns">
+      <h3>Your Cost Is</h3>
+
+      <!-- Grid  -->
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <p id="orig_price">$<%= @cost %> - What a great deal!</p>
+            <p id="discount_price"></p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="panel">
+<!--             <p><a href="#" class="small button">I have a discount code</a></p> -->
+              <p>I have a discount code</p>
+              <form method="get">
+              Discount Code: <input type="text" name="answer" id="discount_check">
+              <input id="clicker" class="small button" type="button" onClick="validation()" name="submit" value="submit">
+              <input type="hidden" id="cost" name="cost" value="<%= @cost %>">
+            </form>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <div class="panel">
+            <p id="discount_message"></p>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
